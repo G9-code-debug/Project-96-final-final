@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Room Page</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="room.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body onload="adduser()" style="background-image: url('https://image.shutterstock.com/image-vector/vector-doodle-seamless-pattern-smart-260nw-358624982.jpg');">
+        <button onclick="logout()" id="logout_btn" class="btn btn-danger">Logout</button>
+        <center>
+            <h1 id="roomname" style="background-color: #2f2fff; color: white; border-radius: 20px; border-width: 0px; font-size: 30px; font-family: fantasy; width: 220px; height: 35px; margin-left: 20px; text-align: center;"></h1>
+        </center>
+        <h1 id="username" style="background-color: chartreuse; color: white; border-radius: 20px; border-width: 0px; font-size: 30px; font-family: fantasy; width: 220px; height: 65px; margin-left: 20px; text-align: center;"></h1>
+            <div id="message_recieving_div"></div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="container" id="message_div">
+                <center>
+                <input class="form-control" id="message_input" placeholder="Kindly Enter Your Message Here">
+                <button style="margin-top: 15px;" onclick="send()" class="btn btn-success">Send</button>
+                </center>
+            </div>
+    </body>
+</html>
